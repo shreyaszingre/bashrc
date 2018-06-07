@@ -1,0 +1,5 @@
+# include .bash_profile if it exists
+if [ -f $HOME/.bash_runtime/profiles/.bash_profile ]; then
+    . $HOME/.bash_runtime/profiles/.bash_profile
+   echo "~/.bash_runtime/profiles/.bash_profile loaded"
+fi

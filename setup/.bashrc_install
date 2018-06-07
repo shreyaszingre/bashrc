@@ -1,0 +1,5 @@
+# include .bashrc if it exists
+if [ -f $HOME/.bash_runtime/profiles/.bashrc ]; then
+    . $HOME/.bash_runtime/profiles/.bashrc
+   echo "~/.bash_runtime/profiles/.bashrc loaded"
+fi
