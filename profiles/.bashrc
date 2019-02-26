@@ -18,6 +18,8 @@ function start_agent {
     . "${SSH_ENV}" > /dev/null
     /usr/bin/ssh-add ~/.ssh/id_rsa
     /usr/bin/ssh-add ~/.ssh/emde-decustomerportal-aws-FACTSdev
+    /usr/bin/ssh-add ~/.ssh/emde-customerportal-aws-prod
+    /usr/bin/ssh-add ~/.ssh/FARM-282-31a509f7.us-east-1-FACTSqa
 }
 
 # Source SSH settings, if applicable
