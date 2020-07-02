@@ -59,3 +59,8 @@ export LSCOLORS=ExFxBxDxCxegedabagacad
 
 alias ls='ls -laGFh --color=auto'
 echo "Welcome, Shreyas!"
+
+if [ -f ~/.bashrc ]
+then
+    . ~/.bashrc
+fi
