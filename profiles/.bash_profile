@@ -58,6 +58,9 @@ export LSCOLORS=ExFxBxDxCxegedabagacad
 # fi
 
 alias ls='ls -laGFh --color=auto'
+alias gitfs='git fetch; git status'
+alias dev='ssh 212485576@10.227.97.225'
+alias qa='ssh 212485576@10.227.97.111'
 echo "Welcome, Shreyas!"
 
 if [ -f ~/.bashrc ]
