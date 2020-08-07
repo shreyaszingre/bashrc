@@ -1,0 +1,18 @@
+# .bash_profile
+
+# Get the aliases and functions
+if [ -f ~/.bashrc ]; then
+	. ~/.bashrc
+fi
+
+# User specific environment and startup programs
+
+PATH=$PATH:$HOME/bin
+
+export PATH
+# export PS1='\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$ '
+export PS1="\[\e[36m\]\u\[\e[m\]@\[\e[32m\]\h\[\e[m\]: \[\e[31m\]\d\[\e[m\] \[\e[31;40m\]\t\[\e[m\] \[\e[33m\]\w\[\e[m\] \[\e[m\]\n\[\e[37m\]\\$\[\e[m\] "
+export CLICOLOR=1
+export LSCOLORS=ExFxBxDxCxegedabagacad
+# alias ls='ls -laGFh'
+alias ls='ls -laGFh --color=auto'
