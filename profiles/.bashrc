@@ -18,9 +18,6 @@ function start_agent {
     /usr/bin/ssh-agent | sed 's/^echo/#echo/' >> "${SSH_ENV}"
     . "${SSH_ENV}" > /dev/null
     /usr/bin/ssh-add ~/.ssh/id_rsa
-    /usr/bin/ssh-add ~/.ssh/dev
-    /usr/bin/ssh-add ~/.ssh/prod
-    /usr/bin/ssh-add ~/.ssh/qa
 }
 
 # Source SSH settings, if applicable

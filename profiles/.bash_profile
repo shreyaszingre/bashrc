@@ -48,7 +48,7 @@ function parse_git_dirty {
     fi
 }
 
-export PS1="\[\e[36m\]\u\[\e[m\]@\[\e[32m\]\h\[\e[m\]: \[\e[31m\]\d\[\e[m\] \[\e[31;40m\]\t\[\e[m\] \[\e[33m\]\w\[\e[m\] \[\e[35m\]\`parse_git_branch\`\[\e[m\]\n\[\e[37m\]\\$\[\e[m\] "
+export PS1="\[\e[36m\]\u\[\e[m\]@\[\e[32m\]\h\[\e[m\]: \[\e[31m\]\D{%a %b %d %Y %H:%M:%S}\[\e[m\] \[\e[33m\]\w\[\e[m\] \[\e[35m\]\`parse_git_branch\`\[\e[m\]\n\[\e[37m\]\\$\[\e[m\] "
 
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
@@ -59,8 +59,6 @@ export LSCOLORS=ExFxBxDxCxegedabagacad
 
 alias ls='ls -laGFh --color=auto'
 alias gitfs='git fetch; git status'
-alias dev='ssh 212485576@10.227.97.225'
-alias qa='ssh 212485576@10.227.97.111'
 alias tr='tree -L 3'
 
 echo "Welcome, Shreyas!"
